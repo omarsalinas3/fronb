@@ -8,7 +8,7 @@
 <body>
     <h1>Selecciona el Paquete</h1>
     <div class="card-container">
-        <div class="card" onclick="window.location.routerlink='hospital?monto=100'">
+        <div class="card" [routerLink]="['/hospital']" [queryParams]="{ monto: 100 }">
             <div class="card-header">
                 <h2>Básico</h2>
             </div>
@@ -20,7 +20,7 @@
                 <div>Suscríbete</div>
             </div>
         </div>
-        <div class="card" onclick="window.location.routerlink='hospital?monto=250'">
+        <div class="card" [routerLink]="['/hospital']" [queryParams]="{ monto: 250 }">
             <div class="card-header">
                 <h2>Avanzado</h2>
             </div>
@@ -32,7 +32,7 @@
                 <div>Suscríbete</div>
             </div>
         </div>
-        <div class="card" onclick="window.location.routerlink='hospital?monto=500'">
+        <div class="card" [routerLink]="['/hospital']" [queryParams]="{ monto: 500 }">
             <div class="card-header">
                 <h2>Premium</h2>
             </div>
